@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+
+}
+
+
+body{
+	font-family: 'Roboto' , sans-serif;
+	color: #333;
+	background-color: $body;
+	
+}
+
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration:none;
+	color: #fff;
+
+}
+
+a:hover{
+	color: $siteGreen;
+}
+.active{
+	color: $siteGreen;
+}
+
+li {
+	list-style: none;
+}
+
+
+/* for dark transparent image backround  wrap the image in a div with the class of overlay */
+
+.overlay {
+    position: relative;
+    transition: all 1s;
+}
+.overlay:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+}
+/*  .overlay:hover:after {
+    opacity: 0;
+}  */

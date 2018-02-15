@@ -1,0 +1,26 @@
+.btn{
+	background: #fff;
+	color: black;
+	padding: 7px 12px;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+
+	@mixin atSmall{
+		margin-top: 0;
+		padding: 10px 25px;
+		border-radius: 5px;
+	}
+
+	@mixin atMedium{
+		margin-top: 0;
+		padding: 15px 35px;
+		border-radius: 5px;
+	}
+
+	&__blue{
+		background-color: $siteGreen;
+		border: 1px solid $siteGreen;
+		color: #fff;
+	}
+}

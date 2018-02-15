@@ -1,0 +1,42 @@
+.navbarfixed{
+	overflow: hidden;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+}
+.navbar{
+	background-color: transparent;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo{
+		font-size: 2rem;
+		font-weight: bolder;
+	}
+
+	&__links{
+		 & li {
+		 	display: none;
+		 	margin-right: 2rem;
+		 	font-size: .95rem;
+		 	font-weight: 200;
+
+			 	@mixin atMedium{
+			 		display: flex;
+			 }
+		 }
+	}
+
+	&__mobile-manu{
+		display: block;
+		position: relative;
+		right: 20px;
+
+			@mixin atMedium{
+				display: none;
+			}
+	}
+
+}
