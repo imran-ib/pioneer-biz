@@ -1,4 +1,5 @@
 .portfolio{
+	overflow: hidden;
 	@mixin clearfix;
 
 	&__content{

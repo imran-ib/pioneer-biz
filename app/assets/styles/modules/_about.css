@@ -2,6 +2,7 @@
 	overflow: hidden;
 
 	&__large-image{
+		background-size: cover;
 		position: relative;
 	}
 	&__heading{

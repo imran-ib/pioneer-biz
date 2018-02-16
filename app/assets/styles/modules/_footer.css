@@ -1,0 +1,24 @@
+.footer{
+	overflow: hidden;
+	background-color: #fff;
+
+	&__content{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 120px;
+
+	@mixin atSmall{
+		flex-flow: row;
+		}
+	}
+
+	& bottun{
+		margin: 0;
+	}
+	& p{
+		margin: 0;
+		text-align: center;
+	}
+}

@@ -456,6 +456,8 @@ template {
 
 }
 
+body, html { overflow-x:hidden; }
+
 body{
 	font-family: 'Roboto' , sans-serif;
 	color: #333;
@@ -550,6 +552,10 @@ li {
 		background-color: #3fb0ac;
 		border: 1px solid #3fb0ac;
 		color: #fff;
+	}
+
+.btn__at-small-b-marign{
+		margin-top: 0;
 	}
 
 /*!
@@ -7737,6 +7743,11 @@ hr{
 	margin-top: 3.125rem;
 }
 
+.portfolio{
+	overflow: hidden;
+
+}
+
 .portfolio::after{
 		content: "";
 		clear: both;
@@ -7815,6 +7826,7 @@ hr{
 }
 
 .about__large-image{
+		background-size: cover;
 		position: relative;
 	}
 
@@ -7890,5 +7902,45 @@ hr{
 .about__bottom h2{
 			text-align: center;
 		}
+
+.footer{
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.footer__content{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 120px;
+	}
+
+@media (min-width: 530px){
+
+.footer__content{
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row;
+		        flex-flow: row
+	}
+	}
+
+.footer bottun{
+		margin: 0;
+	}
+
+.footer p{
+		margin: 0;
+		text-align: center;
+	}
 
  

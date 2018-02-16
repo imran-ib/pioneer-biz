@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 
 }
-
+body, html { overflow-x:hidden; }
 
 body{
 	font-family: 'Roboto' , sans-serif;

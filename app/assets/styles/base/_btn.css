@@ -23,4 +23,7 @@
 		border: 1px solid $siteGreen;
 		color: #fff;
 	}
+	&__at-small-b-marign{
+		margin-top: 0;
+	}
 }
