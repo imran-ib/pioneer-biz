@@ -1,0 +1,62 @@
+.about{
+	overflow: hidden;
+
+	&__large-image{
+		position: relative;
+	}
+	&__heading{
+		position: absolute;
+		color: #fff;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 1.5rem;
+				@mixin atSmall{
+					font-size: 2.5rem;
+				}
+
+				@mixin atMedium{
+					font-size: 4rem;
+				}
+		}
+
+		&__img{
+			margin-top: 50px;
+		}
+
+	&__t-margin{
+		margin-top: 50px;
+	}
+	
+	&__top{
+		border: 1px solid #fff;
+		background-color: #fff;
+
+		& p{
+			padding: 18px;
+		}
+
+		& h2{
+			text-align: center;
+		}
+	}
+
+	&__bottom{
+	
+		border: 1px solid #fff;
+		background-color: #fff;
+
+		& p {
+			padding: 18px;
+		}
+		& h2{
+			text-align: center;
+		}
+	}
+}
