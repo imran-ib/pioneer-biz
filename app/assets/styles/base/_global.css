@@ -7,7 +7,7 @@
 body{
 	font-family: 'Roboto' , sans-serif;
 	color: #333;
-	background-color: $body;
+	background-color: #fff;
 	
 }
 
@@ -15,11 +15,11 @@ body{
 img{
 	width: 100%;
 	height: auto;
+    display: block;
 }
 
 a{
 	text-decoration:none;
-	color: #fff;
 
 }
 
@@ -48,7 +48,7 @@ li {
     height:100%;
     top:0; 
     left:0;
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.8);
     opacity: 1;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;

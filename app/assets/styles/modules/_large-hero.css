@@ -4,6 +4,7 @@
 		&__img{
 			background-size: cover;
 			position: relative;
+			border-bottom: 10px solid $siteGreen;
 		}
 		&__content{
 			position: absolute;

@@ -1,0 +1,28 @@
+.portfolio{
+
+	@mixin clearfix;
+
+	&__content{
+		lost-column: 1;
+
+		@mixin atMedium{
+			lost-column: 1/2;
+		}
+
+
+	}
+
+	&__img{
+		margin-bottom: 50px;
+
+		@mixin atMedium{
+		margin-bottom: 0;
+		}
+
+	}
+
+	&__text p{
+		line-height: 2rem;
+		color: rgba(0, 0, 0, .5);
+	}
+}

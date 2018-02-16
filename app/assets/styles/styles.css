@@ -10,5 +10,8 @@
 @import "lib/owl.theme.default";
 @import "modules/_navbar";
 @import "modules/_large-hero";
+@import "modules/_services";
+@import "modules/_typography";
+@import "modules/_portfolio";
 
  
