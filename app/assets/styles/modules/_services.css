@@ -1,6 +1,6 @@
 .services{
+	
 	overflow: hidden;
-	background-color: #fff;
 	@mixin clearfix;
 
 	&__main{
@@ -8,6 +8,8 @@
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	width: 35.9375rem;
+
+		
 	}
 
 	&__left{
@@ -27,28 +29,34 @@
 			}
 	}
 
-	&__icon{
-		display: inline-block;
-		top: 0;
-		left: 150px;
-		position: relative;
+	&__unit{
+		background-color: #fff;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 4rem;
 
-	}
-	&__text{
-		text-align: center;
-		position: relative;
-		text-align: left;
+		& img{
+			margin-top: 2rem;
+			border-radius: 50%;
 
-		& h3 {
-			text-align: center;
-			font-size: 2rem;
-			color: $siteGreen;
 		}
 
-		& p {
+		& h3{
+			color: $siteGreen;
+			font-size: 1.5rem;
+		}
+
+		& p{
 			text-align: center;
+			margin: 20px;
 			color: rgba(0, 0, 0, .5);
 		}
+
+			@mixin atMedium{
+
+			}
 	}
 
 	&__section--img{

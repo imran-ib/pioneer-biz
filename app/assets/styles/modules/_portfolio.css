@@ -1,23 +1,20 @@
 .portfolio{
-
 	@mixin clearfix;
 
 	&__content{
 		lost-column: 1;
 
-		@mixin atMedium{
-			lost-column: 1/2;
-		}
-
-
+			@mixin atMedium{
+				lost-column: 1/2;
+			}
 	}
 
 	&__img{
-		margin-bottom: 50px;
-
-		@mixin atMedium{
-		margin-bottom: 0;
-		}
+		margin-bottom: 3.125rem;
+			
+			@mixin atMedium{
+			margin-bottom: 0;
+			}
 
 	}
 
@@ -25,4 +22,5 @@
 		line-height: 2rem;
 		color: rgba(0, 0, 0, .5);
 	}
+
 }

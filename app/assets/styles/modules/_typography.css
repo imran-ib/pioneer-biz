@@ -1,23 +1,24 @@
 .main-heading{
-	margin-top: 50px;
+	margin-top: 3.125rem;
 	margin-bottom: 0;
 	font-weight: 700;
 	color: #000;
 
 	&__center{
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 1.875rem;
 		font-size: 1.5rem;
 
-		@mixin atSmall{
-			font-size: 2rem;
-		}
-		@mixin atMedium{
-			font-size: 2.5rem;
-		}
+			@mixin atSmall{
+				font-size: 2rem;
+			}
+			@mixin atMedium{
+				font-size: 2.5rem;
+			}
 		
 	}
-}
+} 
+	/* Main text Area*/
 
 .main-text{
 	font-size: 1rem;
@@ -25,25 +26,27 @@
 
 	&__center{
 		text-align: center;
-		width: 300px;
+		width: 18.75rem;
 		margin: 0 auto;
-		margin-bottom: 10px;
+		margin-bottom: .625rem;
 		font-size: 1rem;
 
-		@mixin atSmall{
-			width: 400px;
-			font-size: 1.5rem;
-		}
+			@mixin atSmall{
+				width: 25rem;
+				font-size: 1.5rem;
+			}
 
-		@mixin atMedium{
-			width: 500px;
-		}
+			@mixin atMedium{
+				width: 31.25rem;
+			}
 	}
 }
 
+
+
 hr{
-	width: 500px;
+	width: 31.25rem;
 	color: $siteGreen;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	margin-bottom: 3.125rem;
+	margin-top: 3.125rem;
 }

@@ -459,7 +459,7 @@ template {
 body{
 	font-family: 'Roboto' , sans-serif;
 	color: #333;
-	background-color: #fff;
+	background-color: #efefef;
 	
 }
 
@@ -7495,8 +7495,8 @@ li {
 	}
 
 .services{
+	
 	overflow: hidden;
-	background-color: #fff;
 
 	
 	
@@ -7520,6 +7520,8 @@ li {
 	    -ms-flex-pack: start;
 	        justify-content: flex-start;
 	width: 35.9375rem;
+
+		
 	}
 
 .services__left{
@@ -7622,30 +7624,43 @@ li {
 	}
 	}
 
-.services__icon{
-		display: inline-block;
-		top: 0;
-		left: 150px;
-		position: relative;
-
+.services__unit{
+		background-color: #fff;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column wrap;
+		        flex-flow: column wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		margin-bottom: 4rem;
 	}
 
-.services__text{
-		text-align: center;
-		position: relative;
-		text-align: left;
-	}
+.services__unit img{
+			margin-top: 2rem;
+			border-radius: 50%;
 
-.services__text h3 {
-			text-align: center;
-			font-size: 2rem;
-			color: #3fb0ac;
 		}
 
-.services__text p {
+.services__unit h3{
+			color: #3fb0ac;
+			font-size: 1.5rem;
+		}
+
+.services__unit p{
 			text-align: center;
+			margin: 20px;
 			color: rgba(0, 0, 0, .5);
 		}
+
+@media (min-width: 800px){
+	}
 
 .services__section--img{
 		border: 1px solid #fff;
@@ -7656,7 +7671,7 @@ li {
 	}
 
 .main-heading{
-	margin-top: 50px;
+	margin-top: 3.125rem;
 	margin-bottom: 0;
 	font-weight: 700;
 	color: #000;
@@ -7664,7 +7679,7 @@ li {
 
 .main-heading__center{
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 1.875rem;
 		font-size: 1.5rem;
 		
 	}
@@ -7672,7 +7687,7 @@ li {
 @media (min-width: 530px){
 
 .main-heading__center{
-			font-size: 2rem
+				font-size: 2rem
 		
 	}
 	}
@@ -7680,10 +7695,12 @@ li {
 @media (min-width: 800px){
 
 .main-heading__center{
-			font-size: 2.5rem
+				font-size: 2.5rem
 		
 	}
 	}
+
+/* Main text Area*/
 
 .main-text{
 	font-size: 1rem;
@@ -7692,32 +7709,32 @@ li {
 
 .main-text__center{
 		text-align: center;
-		width: 300px;
+		width: 18.75rem;
 		margin: 0 auto;
-		margin-bottom: 10px;
+		margin-bottom: .625rem;
 		font-size: 1rem;
 	}
 
 @media (min-width: 530px){
 
 .main-text__center{
-			width: 400px;
-			font-size: 1.5rem
+				width: 25rem;
+				font-size: 1.5rem
 	}
 	}
 
 @media (min-width: 800px){
 
 .main-text__center{
-			width: 500px
+				width: 31.25rem
 	}
 	}
 
 hr{
-	width: 500px;
+	width: 31.25rem;
 	color: #3fb0ac;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	margin-bottom: 3.125rem;
+	margin-top: 3.125rem;
 }
 
 .portfolio::after{
@@ -7728,82 +7745,62 @@ hr{
 
 .portfolio__content{
 		width: calc(99.9% * 1 - (60px - 60px * 1));
-
-
 	}
 
 .portfolio__content:nth-child(1n){
 		float: left;
 		margin-right: 60px;
 		clear: none;
-
-
 	}
 
 .portfolio__content:last-child{
 		margin-right: 0;
-
-
 	}
 
 .portfolio__content:nth-child(NaNn){
 		margin-right: 0;
 		float: right;
-
-
 	}
 
 .portfolio__content:nth-child(NaNn + 1){
 		clear: both;
-
-
 	}
 
 @media (min-width: 800px){
 
 .portfolio__content{
-			width: calc(99.9% * 1/2 - (60px - 60px * 1/2))
-
-
+				width: calc(99.9% * 1/2 - (60px - 60px * 1/2))
 	}
 
 .portfolio__content:nth-child(1n){
-			float: left;
-			margin-right: 60px;
-			clear: none
-
-
+				float: left;
+				margin-right: 60px;
+				clear: none
 	}
 
 .portfolio__content:last-child{
-			margin-right: 0
-
-
+				margin-right: 0
 	}
 
 .portfolio__content:nth-child(2n){
-			margin-right: 0;
-			float: right
-
-
+				margin-right: 0;
+				float: right
 	}
 
 .portfolio__content:nth-child(2n + 1){
-			clear: both
-
-
+				clear: both
 	}
 	}
 
 .portfolio__img{
-		margin-bottom: 50px;
+		margin-bottom: 3.125rem;
 
 	}
 
 @media (min-width: 800px){
 
 .portfolio__img{
-		margin-bottom: 0
+			margin-bottom: 0
 
 	}
 	}
