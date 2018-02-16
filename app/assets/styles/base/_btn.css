@@ -5,6 +5,10 @@
 	border-radius: 5px;
 	margin-top: 20px;
 	cursor: pointer;
+	transition: .2s ease-in;
+		&:hover{
+			transform: scale(1.1)
+		}
 
 	@mixin atSmall{
 		margin-top: 0;
@@ -22,6 +26,22 @@
 		background-color: $siteGreen;
 		border: 1px solid $siteGreen;
 		color: #fff;
+	}
+
+	&__small{
+		padding: 7px;
+	}
+
+	&__none{
+		display: none;
+
+		&:hover{
+			color: #fff;
+		}
+
+		@mixin atLarge{
+			display: block;
+		}
 	}
 	&__at-small-b-marign{
 		margin-top: 0;

@@ -1,26 +1,20 @@
 $(document).ready(function() {
 
-
-// reveal content on click
-
-	$('.faqs__reveal').click(function() {
-		$(".hidden").hide(400);
-		 $(this).next().show();
-	});
-
-	// owl carousel
-
-
-		
-	  $('.owl-carousel').owlCarousel({
-	  	items: 1,
-	  	autoplay: true,
-	  	loop: true,
-	  	dots: true,
-	  	nav:true,
-	  	fallbackEasing: true,
-	  	dotsEach:true,
-	  	lazyLoad:true
-	  });
+// toggle mobile manu
+		$(".navbar__mobile-manu").on('click' , function(){
+			$('li').slideToggle(800);
+		});
+	
 
 });
+
+
+// reveal 
+
+window.sr = ScrollReveal();
+sr.reveal('.portfolio');
+sr.reveal('.services__unit');
+sr.reveal('.about');
+sr.reveal('.about__img');
+sr.reveal('.about__vision');
+sr.reveal('.footer');

@@ -1,6 +1,14 @@
 .container{
-	max-width: 71.25rem;
+	max-width: auto;
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+
+	@mixin atSmall{
+		max-width: 71.25rem;
 	margin: 0 auto;
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
+
+	}
 }

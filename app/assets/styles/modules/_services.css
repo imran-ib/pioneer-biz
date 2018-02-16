@@ -6,8 +6,14 @@
 	&__main{
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: flex-start;
-	width: 35.9375rem;
+	justify-content: center;
+	text-align: center;
+
+	@mixin atMedium{
+		justify-content: flex-start;
+		text-align: left;
+
+	}
 
 		
 	}

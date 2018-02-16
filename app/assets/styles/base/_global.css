@@ -25,6 +25,7 @@ a{
 
 a:hover{
 	color: $siteGreen;
+    border-bottom: 2px solid $siteGreen;
 }
 .active{
 	color: $siteGreen;
@@ -34,7 +35,10 @@ li {
 	list-style: none;
 }
 
+.toggle-nav {
+    display:none;
 
+}
 /* for dark transparent image backround  wrap the image in a div with the class of overlay */
 
 .overlay {

@@ -20,8 +20,10 @@
 	}
 
 	&__text p{
+		text-align: left;
 		line-height: 2rem;
 		color: rgba(0, 0, 0, .5);
+		margin-left: 1rem;
 	}
 
 }

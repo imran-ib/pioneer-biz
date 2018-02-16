@@ -1,38 +1,68 @@
 .navbarfixed{
 	overflow: hidden;
-	position: fixed;
+	position: static;
 	z-index: 1000;
 	width: 100%;
+
+	@mixin atSmall{
+		position: fixed;
+	}
 }
 .navbar{
-	background-color: #fff;
+	background-color:#fff;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	flex-flow: column;
+	justify-content: space-between; 
 	align-items: center;
+
+	@mixin atSmall{
+		flex-flow: row wrap;
+		background-color: #fff;
+	}
 
 	&__logo{
 		font-size: 2rem;
 		font-weight: bolder;
 	}
 
+	&__logo--left{
+			display: block;	
+		}
+
 	&__links{
 		 & li {
 		 	display: none;
-		 	margin-right: 2rem;
-		 	font-size: .95rem;
+		 	margin: 0;
+		 	font-size: 1.5rem;
 		 	font-weight: 200;
-
+		 	border: 1px;
+		 	border-radius: 5px;			 	
 			 	@mixin atMedium{
+			 		font-size: .95rem;
+			 		margin-right: 0;
 			 		display: flex;
+			 		justify-content: flex-end;
+			 		margin-right: 2rem;
+			 }
+			 & a{
+			 	margin-top: 5px;
+
 			 }
 		 }
 	}
 
 	&__mobile-manu{
 		display: block;
-		position: relative;
-		right: 20px;
+		position: absolute;
+		right: 15px;
+		top: 9px;
+
+			& >div{
+				width: 25px;
+    			height: 3px;
+    			background-color: black;
+    			margin: 6px 0;
+			}
 
 			@mixin atMedium{
 				display: none;
