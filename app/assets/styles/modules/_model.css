@@ -18,6 +18,18 @@
 		transform: scale(1);
 
 	}
+	&__logo{
+		width: 220px;
+		height: 60px;
+		margin: 0 auto;
+		margin-top: 1rem;
+		margin-top: 32px;
+
+		@mixin atSmall{
+			width: 199px;
+			height: 55px;
+		}
+	}
 
 		&__form{
 			display: flex;
