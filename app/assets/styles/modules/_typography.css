@@ -17,7 +17,27 @@
 			}
 		
 	}
+
+	&__green{
+		color: $siteGreen;
+	}
+
+	&__margin-b{
+		margin-bottom: 10px;
+	}
+
+	&__large-fon-on-s-screen{
+		font-size: 1.5rem;
+	}
 } 
+	
+
+
+
+
+
+
+
 	/* Main text Area*/
 
 .main-text{
@@ -39,6 +59,13 @@
 			@mixin atMedium{
 				width: 31.25rem;
 			}
+	}
+
+	
+
+	&__small{
+		font-size: 1rem;
+		margin-top: 0;
 	}
 }
 

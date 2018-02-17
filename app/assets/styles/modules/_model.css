@@ -1,0 +1,117 @@
+.model{
+	opacity: 0;
+	visibility: hidden;
+	overflow: scroll;
+	background-color: rgba(255, 255, 255, .9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100000;
+	transform: scale(1.2);
+	transition: all .3s ease-out;
+
+	&__is--visible{
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+
+	}
+
+		&__form{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			&--input{
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				margin-bottom: 2rem;
+				max-width: 100%;
+				justify-content: center;
+
+					
+					@mixin atLarge{
+						margin-right: 3rem;
+					}
+			}
+
+			&--message{
+				display: flex;
+				flex-flow: column wrap;
+
+			}
+			
+		}
+
+	&__input{
+		display: flex;
+		width: 280px;
+		margin-top: 1rem;
+		max-width: 100%;
+
+		&[type="text"]{
+			align-self: stretch;
+			padding: 8px;
+			border: 1px solid $siteGreen;
+			border-radius: 0px;
+
+		}
+		&[type="email"]{
+			padding: 8px;
+			border: 1px solid $siteGreen;
+			border-radius: 0px;
+		}
+		&[type="number"]{
+			padding: 8px;
+			border: 1px solid $siteGreen;
+			border-radius: 0px;
+		}
+
+	}
+
+	&__label{
+		font-size: 1.2rem;
+		margin-bottom: 5px;
+	}
+
+	&__contact-info{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+
+		& p{
+			margin-bottom: 0;
+			margin-top: 10px;
+		}
+	}
+
+	&__text-center{
+		font-size: .9rem;
+		text-align: center;
+	}
+
+	&__margin-top{
+		margin-top: -30px;
+	}
+
+	&__close{
+		position: absolute;
+		color: $siteGreen;
+		top: 20px;
+		right: 20px;
+		font-size: 2rem;
+		transform: scaleX(1.2);
+		cursor: pointer;
+		transform-origin: 100% 0;
+		transition: all .2 ease-in;
+
+		&:hover{
+			color:black ;
+		}
+	}
+
+
+}

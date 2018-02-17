@@ -46,4 +46,8 @@
 	&__at-small-b-marign{
 		margin-top: 0;
 	}
+
+	&__margin-top{
+		margin-top: 10px;
+	}
 }
